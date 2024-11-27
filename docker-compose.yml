@@ -4,7 +4,7 @@ services:
   app:
     build:
       context: .
-    network_mode: host
     volumes:
       - ./peer_labels.json:/app/peer_labels.json
+      - /var/run/wireguard:/var/run/wireguard
     restart: always
