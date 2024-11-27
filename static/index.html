@@ -5,44 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WireGuard Peer Manager</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        /* Make the header and search bar fixed */
-        .fixed-top-section {
-            position: sticky;
-            top: 0;
-            z-index: 1020;
-            background-color: white;
-            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-            padding: 10px 0;
-        }
-
-        /* Adjust the table headers to not overlap */
-        thead th {
-            position: sticky;
-            top: 72px; /* Adjusted to match height of the top section */
-            background-color: white;
-            z-index: 1020;
-            border-bottom: 2px solid #dee2e6;
-        }
-
-        /* Fixed footer for the Update button */
-        .fixed-footer {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            background-color: white;
-            box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.1);
-            padding: 10px;
-            z-index: 1020;
-            text-align: right;
-        }
-
-        /* Ensure proper spacing for content scrolling */
-        .content-section {
-            margin-bottom: 60px; /* Height of the footer */
-        }
-    </style>
+    <link rel="stylesheet" href="/static/css/styles.css">
 </head>
 <body>
     <div class="container mt-5">
