@@ -4,8 +4,7 @@ services:
   app:
     build:
       context: .
-    ports:
-      - "5000:5000"
+    network_mode: host
     volumes:
       - ./peer_labels.json:/app/peer_labels.json
     restart: always
